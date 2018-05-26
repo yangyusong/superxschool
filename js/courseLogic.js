@@ -9,10 +9,10 @@ client.getList({}, function(json){
     var html = init.courseObj.render({course:json});
     $(".courseLists").html(html);
 });
-client.getNab({}, function(json){
-    console.log("nab");
-    console.log(json);
-});
+//client.getNab({}, function(json){
+//    console.log("nab");
+//    console.log(json);
+//});
 //console.log(html);
 
 //init.toPageUpload();

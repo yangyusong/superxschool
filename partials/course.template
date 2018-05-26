@@ -12,7 +12,7 @@
             class="text-muted">2013-11-12 15:05:56</span><span class="pull-right"><a href="###"><em
             class="icon-heart-empty"></em> 123</a></span></div>
     <div class="card-actions">
-      <span><%= one.price %>&nbsp;nas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><button class="btn btn-primary"><em class="icon-shopping-cart"></em> 订购</button>
+      <span><%= one.price %>&nbsp;nas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><button data-price="<%= one.price %>" data-course="<%= one.course_name %>" class="btn btn-primary order_course"><em class="icon-shopping-cart"></em> 订购</button>
     </div>
   </div>
 </div>
