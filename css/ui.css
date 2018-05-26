@@ -1,0 +1,564 @@
+.accordion {
+    color: #000;
+}
+.accordion li {
+    margin-bottom: 1px;
+}
+.accordion-header {
+    background: none repeat scroll 0 0 #2980b9;
+    color: #ecf0f1;
+}
+.accordion-header:hover, .is-active .accordion-header {
+    background: none repeat scroll 0 0 #3498db;
+}
+.accordion-section {
+    background: none repeat scroll 0 0 #ecf0f1;
+}
+.accordion-body ul {
+    margin-top: 1.25rem;
+}
+.accordion-body ul:first-child, .accordion-body p:first-child {
+    margin-top: 0;
+}
+.blackout .loader.bar-wave > span {
+    background: none repeat scroll 0 0 #1abc9c;
+}
+.breadcrumb a {
+    color: #3498db;
+}
+.breadcrumb a:hover {
+    color: #2980b9;
+}
+.breadcrumb a .caret {
+    color: #95a5a6;
+}
+.breadcrumb li:last-child a {
+    color: #95a5a6;
+}
+.button {
+    background: none repeat scroll 0 0 #7f8c8d;
+    color: #fff;
+    margin: 1px 0;
+}
+.button.is-active, .is-active .button, .button:hover {
+    background: none repeat scroll 0 0 #95a5a6;
+}
+.button.is-info {
+    background: none repeat scroll 0 0 #2980b9;
+}
+.button.is-info:hover {
+    background: none repeat scroll 0 0 #3498db;
+}
+.button.is-success {
+    background: none repeat scroll 0 0 #27ae60;
+}
+.button.is-success:hover {
+    background: none repeat scroll 0 0 #2ecc71;
+}
+.button.is-warning {
+    background: none repeat scroll 0 0 #f39c12;
+}
+.button.is-warning:hover {
+    background: none repeat scroll 0 0 #f1c40f;
+}
+.button.is-error {
+    background: none repeat scroll 0 0 #c0392b;
+}
+.button.is-error:hover {
+    background: none repeat scroll 0 0 #e74c3c;
+}
+.button.is-disabled {
+    background: none repeat scroll 0 0 #7f8c8d;
+    opacity: 0.5;
+}
+.button-group + .button-group {
+    margin: 0 1rem;
+}
+.button-group > li .button, .button-group > .button {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.button-group > .button:first-child {
+    border-left: 0 none;
+}
+.button-group > li {
+    margin: 1px 0;
+}
+.button-group > li .button {
+    margin: 0;
+}
+.button-group > li:first-child .button {
+    border-left: 0 none;
+}
+.button-group--vertical > li, .button-group--vertical > .button {
+    border-left: 0 none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+.button-group--vertical > li:first-child, .button-group--vertical > .button:first-child {
+    border-top: 0 none;
+}
+.carousel {
+    margin: 0 auto;
+}
+.carousel .caret-left, .carousel .caret-right {
+    border-width: 15px;
+}
+.carousel-next, .carousel-prev {
+    color: #fff;
+    opacity: 0.5;
+}
+.carousel-next:hover, .carousel-prev:hover {
+    opacity: 1;
+}
+.carousel-next, .carousel-prev {
+    display: block;
+    height: auto;
+    padding: 0.75rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    z-index: 5;
+}
+.carousel-next:focus, .carousel-prev:focus {
+    outline: medium none;
+}
+.carousel-prev {
+    left: 0;
+}
+.carousel-next {
+    right: 0;
+}
+.carousel-tabs {
+    left: 50%;
+    position: absolute;
+    top: 0.75rem;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+pre {
+    color: black;
+}
+.drop {
+    background: none repeat scroll 0 0 #16a085;
+}
+.drop li > a {
+    color: #fff;
+}
+.drop li > a:hover, .drop li.is-active > a {
+    background: none repeat scroll 0 0 #1abc9c;
+}
+.drop-heading {
+    background: none repeat scroll 0 0 #2c3e50;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+.drop-divider {
+    border-top-color: #1abc9c;
+}
+.drop-desc {
+    display: block;
+}
+.flyout {
+    background: none repeat scroll 0 0 #d35400;
+}
+.flyout li > a {
+    color: #fff;
+}
+.flyout li > a:hover, .flyout li.is-open > a {
+    background: none repeat scroll 0 0 #e67e22;
+}
+.flyout-heading {
+    background: none repeat scroll 0 0 #2c3e50;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+.input {
+    color: #000;
+    margin: 1px 0;
+}
+.input:focus {
+    border-color: #2980b9;
+}
+.field.is-error:not(.is-disabled) .input, .fields li.is-error:not(.is-disabled) .input {
+    border-color: #c0392b;
+}
+.field.is-error:not(.is-disabled) .input-radio, .field.is-error:not(.is-disabled) .input-checkbox, .fields li.is-error:not(.is-disabled) .input-radio, .fields li.is-error:not(.is-disabled) .input-checkbox {
+    color: #e74c3c;
+}
+.field.is-success:not(.is-disabled) .input, .fields li.is-success:not(.is-disabled) .input {
+    border-color: #27ae60;
+}
+.field.is-success:not(.is-disabled) .input-radio, .field.is-success:not(.is-disabled) .input-checkbox, .fields li.is-success:not(.is-disabled) .input-radio, .fields li.is-success:not(.is-disabled) .input-checkbox {
+    color: #2ecc71;
+}
+.field-help {
+    color: #bdc3c7;
+}
+fieldset {
+    border-top-color: #bdc3c7;
+}
+.select {
+    color: #000;
+}
+.select-options .drop-desc {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+.select-options li.is-disabled {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+}
+.input-group {
+    margin: 1px 0;
+}
+.input-group .input {
+    margin: 0;
+}
+.input-addon {
+    background: none repeat scroll 0 0 #16a085;
+    border: 1px solid #16a085;
+    color: #ecf0f1;
+}
+.label {
+    background: none repeat scroll 0 0 #7f8c8d;
+    color: #fff;
+}
+.label.is-info {
+    background: none repeat scroll 0 0 #2980b9;
+}
+.label.is-success {
+    background: none repeat scroll 0 0 #27ae60;
+}
+.label.is-warning {
+    background: none repeat scroll 0 0 #f39c12;
+}
+.label.is-error {
+    background: none repeat scroll 0 0 #c0392b;
+}
+.label--arrow-left::after {
+    border-right-color: #7f8c8d;
+}
+.label--arrow-right::after {
+    border-left-color: #7f8c8d;
+}
+.label--ribbon-left::after {
+    border-right-color: #95a5a6;
+}
+.label--ribbon-right::after {
+    border-left-color: #95a5a6;
+}
+.is-maskable {
+    margin-top: 1rem;
+}
+.mask .loader.bar-wave > span {
+    background: none repeat scroll 0 0 #9b59b6;
+}
+.matrix {
+    margin-top: 1rem;
+}
+.matrix li {
+    margin: 0 20px 20px 0;
+}
+.modal-outer {
+    background: none repeat scroll 0 0 #3498db;
+    color: #fff;
+    position: relative;
+}
+.modal-head, .modal-foot {
+    background: none repeat scroll 0 0 #2980b9;
+}
+.modal-body p:first-child {
+    margin-top: 0;
+}
+.modal-foot {
+    text-align: center;
+}
+.modal-close {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    opacity: 0.5;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+}
+.modal-close:hover {
+    opacity: 1;
+}
+.notice {
+    background: none repeat scroll 0 0 #95a5a6;
+}
+.notice.is-info {
+    background: none repeat scroll 0 0 #3498db;
+}
+.notice.is-success {
+    background: none repeat scroll 0 0 #2ecc71;
+}
+.notice.is-warning {
+    background: none repeat scroll 0 0 #f1c40f;
+}
+.notice.is-error {
+    background: none repeat scroll 0 0 #e74c3c;
+}
+.off-canvas {
+    background: none repeat scroll 0 0 #8e44ad;
+    color: #fff;
+    padding: 1rem;
+}
+.on-canvas .test-demo {
+    text-align: left;
+}
+.on-canvas p {
+    margin: 1.25rem 0;
+}
+.on-canvas > .notice {
+    margin: 0;
+}
+@media only screen and (min-width: 1024px) {
+    .off-canvas {
+        top: 67px;
+    }
+}
+.pagination {
+    text-align: center;
+}
+.pagination ol {
+    display: inline-block;
+}
+.pagination--grouped li {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pagination--grouped li:first-child {
+    border-left: 0 none;
+}
+.pin {
+    background: none repeat scroll 0 0 #e74c3c;
+    color: #fff;
+    padding: 1rem;
+}
+.popover {
+    background: none repeat scroll 0 0 #9b59b6;
+    color: #fff;
+}
+.popover.center-left .popover-arrow {
+    border-left-color: #9b59b6;
+}
+.popover.center-right .popover-arrow {
+    border-right-color: #9b59b6;
+}
+.popover.top-center .popover-arrow {
+    border-top-color: #9b59b6;
+}
+.popover.bottom-center .popover-arrow {
+    border-bottom-color: #9b59b6;
+}
+.popover-head {
+    background: none repeat scroll 0 0 #8e44ad;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.popover-body {
+    padding: 0.5rem;
+}
+.progress {
+    background: none repeat scroll 0 0 #bdc3c7;
+    color: #fff;
+}
+.progress-bar {
+    background: none repeat scroll 0 0 #95a5a6;
+}
+.progress-bar.is-info {
+    background: none repeat scroll 0 0 #3498db;
+}
+.progress-bar.is-success {
+    background: none repeat scroll 0 0 #2ecc71;
+}
+.progress-bar.is-warning {
+    background: none repeat scroll 0 0 #f1c40f;
+}
+.progress-bar.is-error {
+    background: none repeat scroll 0 0 #e74c3c;
+}
+.responsive-table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: 100%;
+}
+.responsive-table td {
+    background: none repeat scroll 0 0 #95a5a6;
+    color: #fff;
+    padding: 5px;
+}
+.responsive-table td[class*="show-"] {
+    background: none repeat scroll 0 0 #2ecc71;
+}
+.responsive-table td[class*="hide-"] {
+    background: none repeat scroll 0 0 #e74c3c;
+}
+.showcase-next, .showcase-prev, .showcase-close {
+    color: #fff;
+    opacity: 0.5;
+}
+.showcase-next:hover, .showcase-prev:hover, .showcase-close:hover {
+    opacity: 1;
+}
+.showcase-next, .showcase-prev {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    display: block;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.showcase-next:focus, .showcase-prev:focus {
+    outline: medium none;
+}
+.showcase-prev {
+    left: 0.75rem;
+}
+.showcase-next {
+    right: 0.75rem;
+}
+.showcase-tabs {
+    left: 0;
+    padding: 0.75rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+.showcase-caption {
+    color: #fff;
+}
+.showcase-inner {
+    background: none repeat scroll 0 0 #bdc3c7;
+    padding: 5px;
+}
+.steps ol {
+    background: none repeat scroll 0 0 #f39c12;
+    color: #000;
+}
+.steps ol .step, .steps ol .step::after {
+    background: none repeat scroll 0 0 #f39c12;
+}
+.steps ol .step::after {
+    border-bottom: 1px solid #f1c40f;
+    border-right: 1px solid #f1c40f;
+}
+.steps ol a.step {
+    color: #000;
+}
+.steps ol a.step:hover, .steps ol a.step:hover::after {
+    background: none repeat scroll 0 0 #f7dc6f;
+}
+.steps ol li.is-complete .step, .steps ol li.is-complete .step::after {
+    background: none repeat scroll 0 0 #f1c40f;
+}
+.steps ol li.is-complete .step::after {
+    border-bottom-color: #f39c12;
+    border-right-color: #f39c12;
+}
+.switch input:checked + .switch-bar {
+    background: none repeat scroll 0 0 #e74c3c;
+    border-color: #e74c3c;
+}
+.switch-bar {
+    background: none repeat scroll 0 0 #c0392b;
+    border: 2px solid #c0392b;
+}
+.switch-toggle {
+    background: none repeat scroll 0 0 #ecf0f1;
+}
+.tabs .span-10 {
+    padding-left: 3rem;
+}
+.table {
+    color: #000;
+}
+.table.is-sortable thead th > a {
+    background: none repeat scroll 0 0 #d35400;
+    color: #fff;
+}
+.table.is-sortable thead th > a:hover {
+    background: none repeat scroll 0 0 #e67e22;
+}
+.table:first-child {
+    margin-top: 0;
+}
+.toast {
+    background: none repeat scroll 0 0 #9b59b6;
+    color: #fff;
+    padding: 0.5rem;
+}
+.toast a {
+    color: #f1c40f;
+}
+.tooltip {
+    background: none repeat scroll 0 0 #2ecc71;
+    color: #fff;
+    padding: 0;
+}
+.tooltip.center-left .tooltip-arrow {
+    border-left-color: #2ecc71;
+}
+.tooltip.center-right .tooltip-arrow {
+    border-right-color: #2ecc71;
+}
+.tooltip.top-center .tooltip-arrow {
+    border-top-color: #2ecc71;
+}
+.tooltip.bottom-center .tooltip-arrow {
+    border-bottom-color: #2ecc71;
+}
+.tooltip-head {
+    background: none repeat scroll 0 0 #27ae60;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.tooltip-body {
+    padding: 0.5rem;
+}
+.type-ahead {
+    background: none repeat scroll 0 0 #c0392b;
+}
+.type-ahead li > a {
+    color: #fff;
+}
+.type-ahead li > a:hover, .type-ahead li.is-active > a {
+    background: none repeat scroll 0 0 #e74c3c;
+}
+.type-ahead-heading {
+    background: none repeat scroll 0 0 #2c3e50;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+.type-ahead-highlight {
+    background: none repeat scroll 0 0 #f1c40f;
+}
+.type-ahead-shadow {
+    margin: 0 auto;
+    text-align: left;
+    width: 172px;
+}
+.rtl .button-group > li .button, .rtl .button-group > .button {
+    border-left: 0 none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.rtl .button-group > .button:first-child {
+    border-right: 0 none;
+}
+.rtl .button-group > li:first-child .button {
+    border-right: 0 none;
+}
+.rtl .pagination--grouped li {
+    border-left: 0 none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.rtl .pagination--grouped li:first-child {
+    border-right: 0 none;
+}
+.rtl .tabs .span-10 {
+    padding-left: 0;
+    padding-right: 3rem;
+}

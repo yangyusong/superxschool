@@ -1,0 +1,42 @@
+<img src="123.png" id="imgLogo" alt="">
+<p id="moCalcTiltLR"></p>
+<p id="moCalcTiltFB"></p>
+<p >z <span id="z"></span></p>
+<p >accelerationX <span id="accelerationX"></span></p>
+<p >accelerationY <span id="accelerationY"></span></p>
+<p >accelerationZ <span id="accelerationZ"></span></p>
+<p >alpha <span id="alpha"></span></p>
+<p >beta <span id="beta"></span></p>
+<p >gamma <span id="gamma"></span></p>
+
+<script>
+    function deviceMotionHandler(eventData) {
+        //
+        var acceleration = eventData.accelerationIncludingGravity;
+        var facingUp = -1;
+        if (acceleration.z > 0) {
+            facingUp = +1;
+        }
+        var tiltLR = Math.round(((acceleration.x) / 9.81) * -90);
+        var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) * 90 * facingUp);
+        var z = acceleration.z;
+
+        document.getElementById("moCalcTiltLR").innerHTML = tiltLR;
+        document.getElementById("moCalcTiltFB").innerHTML = tiltFB;
+        document.getElementById("z").innerHTML = z;
+        document.getElementById("accelerationX").innerHTML = eventData.acceleration.x;
+        document.getElementById("accelerationY").innerHTML = eventData.acceleration.y;
+        document.getElementById("accelerationZ").innerHTML = eventData.acceleration.z;
+        document.getElementById("alpha").innerHTML = eventData.alpha;
+        document.getElementById("beta").innerHTML = eventData.beta;
+        document.getElementById("gamma").innerHTML = eventData.gamma;
+        var rotation = "rotate(" + tiltLR + "deg) rotate3d(1,0,0, " + (tiltFB) + "deg)";
+        document.getElementById("imgLogo").style.webkitTransform = rotation;
+    }
+    //
+    if (window.DeviceMotionEvent) {
+        window.addEventListener('devicemotion',deviceMotionHandler, false);
+    }else{
+        alert('亲，你的浏览器不支持DeviceMotionEvent哦~');
+    }
+</script>
