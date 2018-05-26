@@ -30,6 +30,7 @@
 <script src="lib/datetimepicker/datetimepicker.min.js"></script>
 <script src="lib/kindeditor/kindeditor.min.js"></script>
 <script src="lib/jqueryui/jquery-ui.min.js"></script>
+<script src="lib/uploader/zui.uploader.min.js"></script>
 <script src="js/ejs.js"></script>
 <script src="js/init.js"></script>
 <script src="js/client.js"></script>
@@ -90,9 +91,9 @@
                     <li class="active"><a href="your/nice/url">项目</a></li>
                     <li><a href="your/nice/url">需求</a></li>
                     <li class="dropdown"><a href="your/nice/url" class="dropdown-toggle"
-                                            data-toggle="dropdown">管理<strong class="caret"></strong></a>
+                                            data-toggle="dropdown">教师<strong class="caret"></strong></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="your/nice/url">任务</a></li>
+                            <li><a href="javascript:;" onclick="init.toPageUpload()">上传课程</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -128,6 +129,7 @@
                             </div>
 
                         </header>
+                        <div class="container">
                         <!--<section class="cards">-->
                         <!--</section>-->
                         <section class="cards courseLists">
@@ -214,6 +216,7 @@
                                 <li class="next"><a href="#">下一页 »</a></li>
                             </ul>
                         </footer>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,7 +242,7 @@
             <li><a href="#">合作</a></li>
         </ul>
     </div>
-    <div class="text-center">版权所有 © 新生活推荐 2018-2888</div>
+    <div class="text-center">版权所有 © SuperXSchool 2018-2888</div>
     <div class="doc-backtop win-backtop  icon-arrow-circle-up"></div>
     <script type="text/javascript">
         $('.doc-animation').click(function () {

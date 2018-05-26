@@ -1,0 +1,65 @@
+<% if (obj.length) { %>
+<% obj.forEach(function(one){ %>
+<div class="remove_node ui_cell 678E31B0A926">
+    <div class="container-fluid">
+        <div class="row"></div>
+    </div>
+</div>
+<div class="remove_node ui_cell 0FEF5A9E734D">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="61EEBF69C329 ui_grid_cell col-xs-5">
+                <div class="remove_node ui_cell 560C3AB46A4A">
+                    <form>
+                        <fieldset>
+                            <legend>课程上传</legend>
+                            <label>课程标题</label><input type="text"/>
+                            <div id="uploaderExample" class="uploader">
+                                <div class="file-list" data-drag-placeholder="请拖拽文件到此处"></div>
+                                <button type="button" class="btn btn-primary uploader-btn-browse"><i class="icon icon-cloud-upload"></i> 选择文件</button>
+                            </div>
+
+                            <span class="help-block">简短的课程描述.</span>
+                            <textarea class="form-control" rows="3" placeholder="简短的课程描述"></textarea>
+                            <label
+                                class="checkbox"><input type="checkbox"/> 我同意本平台协议</label>
+                            <button type="submit" class="btn">下一步</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="FB1ABBED18F3 ui_grid_cell col-xs-3 real_time_show">
+            </div>
+            <div class="630EDD107B1A ui_grid_cell col-xs-4 uibind_active">
+                <div class="remove_node ui_cell E58F589AE457">
+                    <article class="article">
+                        <p> HTML5是HTML最新的修订版本，2014年10月由<a
+                                href="https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F">万维网联盟</a>（W3C）完成标准制定。目标是替换1999年所制定的HTML
+                            4.01和XHTML
+                            1.0标准，以期能在互联网应用迅速发展的时候，使网络标准达到匹配当代的网络需求。广义论及HTML5时，实际指的是包括HTML、CSS和JavaScript在内的一套技术组合。它希望能够减少网页浏览器对于需要插件的丰富性网络应用服务（Plug-in-Based
+                            Rich Internet Application，RIA），例如：AdobeFlash、Microsoft Silverlight与Oracle
+                            JavaFX的需求，并且提供更多能有效加强网络应用的标准集。 </p>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    if($('#uploaderExample'))
+    {
+        $('#uploaderExample').uploader({
+            autoUpload: true,            // 当选择文件后立即自动进行上传操作
+            url: 'your/file/upload/url'  // 文件上传提交地址
+        });
+    }
+
+
+    var realTimeShow = init.courseRealTimeObj.render({course:[{}]});
+    $(".real_time_show").html(realTimeShow);
+</script>
+
+<% }) %>
+<% } %>

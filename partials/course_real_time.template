@@ -1,0 +1,21 @@
+<% if (course.length) { %>
+<% course.forEach(function(one){ %>
+<div class="">
+  <div class="card"><img src="images/1.jpg" alt=""/> <span class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, voluptatem.</span>
+    <a href="###" class="card-heading"><strong>Lorem ipsum dolor sit.</strong></a>
+
+    <div class="card-content text-muted"> Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Vitae, officia similique enim culpa ipsam voluptas. Quibusdam,
+      tempora autem voluptatem aliquid!
+    </div>
+    <div class="card-actions"><a href="###"><em class="icon-comment"></em> 343</a> <span
+            class="text-muted">2013-11-12 15:05:56</span><span class="pull-right"><a href="###"><em
+            class="icon-heart-empty"></em> 123</a></span></div>
+    <div class="card-actions">
+      <button class="btn btn-primary"><em class="icon-shopping-cart"></em> 订购</button>
+    </div>
+
+  </div>
+</div>
+<% }) %>
+<% } %>
