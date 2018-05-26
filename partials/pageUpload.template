@@ -13,17 +13,22 @@
                     <form>
                         <fieldset>
                             <legend>课程上传</legend>
-                            <label>课程标题</label><input type="text"/>
-                            <div id="uploaderExample" class="uploader">
-                                <div class="file-list" data-drag-placeholder="请拖拽文件到此处"></div>
-                                <button type="button" class="btn btn-primary uploader-btn-browse"><i class="icon icon-cloud-upload"></i> 选择文件</button>
+                            <label>课程标题</label><input class="course_title" type="text"/>
+                            <div id="uploaderImg" class="uploader">
+                                <div class="file-list course_img"  data-drag-placeholder="请拖拽文件到此处"></div>
+                                <button type="button" class="btn btn-primary uploader-btn-browse"><i class="icon icon-cloud-upload"></i> 选择课程封面文件（jpg,png）</button>
                             </div>
 
-                            <span class="help-block">简短的课程描述.</span>
-                            <textarea class="form-control" rows="3" placeholder="简短的课程描述"></textarea>
+                            <div id="uploaderMp4" class="uploader course_mp4" style="margin-top: 10px">
+                                <div class="file-list" data-drag-placeholder="请拖拽文件到此处"></div>
+                                <button type="button" class="btn btn-primary uploader-btn-browse"><i class="icon icon-cloud-upload"></i> 选择课程文件文件</button>
+                            </div>
+
+                            <span class="help-block ">简短的课程描述.</span>
+                            <textarea class="form-control course_intro" rows="3" placeholder="简短的课程描述"></textarea>
                             <label
                                 class="checkbox"><input type="checkbox"/> 我同意本平台协议</label>
-                            <button type="submit" class="btn">下一步</button>
+                            <button type="submit" class="btn next_step">下一步</button>
                         </fieldset>
                     </form>
                 </div>
@@ -47,18 +52,7 @@
     </div>
 </div>
 
-<script>
-    if($('#uploaderExample'))
-    {
-        $('#uploaderExample').uploader({
-            autoUpload: true,            // 当选择文件后立即自动进行上传操作
-            url: 'your/file/upload/url'  // 文件上传提交地址
-        });
-    }
-
-
-    var realTimeShow = init.courseRealTimeObj.render({course:[{}]});
-    $(".real_time_show").html(realTimeShow);
+<script src="js/uploadPage.js">
 </script>
 
 <% }) %>
