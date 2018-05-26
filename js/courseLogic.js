@@ -2,8 +2,17 @@
  * Created by yys on 2018/5/26.
  */
 
-//var html = init.courseObj.render({course:[{}, {}, {}, {}, {}, {}]});
-//$(".courseLists").html(html);
+
+
+client.getList({}, function(json){
+    //console.log(json);
+    var html = init.courseObj.render({course:json});
+    $(".courseLists").html(html);
+});
+client.getNab({}, function(json){
+    console.log("nab");
+    console.log(json);
+});
 //console.log(html);
 
-init.toPageUpload();
+//init.toPageUpload();

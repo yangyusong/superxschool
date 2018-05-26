@@ -1,7 +1,8 @@
 <% if (course.length) { %>
 <% course.forEach(function(one){ %>
 <div class="">
-  <div class="card"><img src="images/1.jpg" alt=""/> <span class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, voluptatem.</span>
+  <div class="card"><img src="images/1.jpg" alt=""/> <span class="caption">
+    <%= one.title %></span>
     <a href="###" class="card-heading"><strong><%= one.title %></strong></a>
 
     <div class="card-content text-muted"> <%= one.content %>

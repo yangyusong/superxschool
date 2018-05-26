@@ -38,12 +38,12 @@
             <div class="630EDD107B1A ui_grid_cell col-xs-4 uibind_active">
                 <div class="remove_node ui_cell E58F589AE457">
                     <article class="article">
-                        <p> HTML5是HTML最新的修订版本，2014年10月由<a
-                                href="https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F">万维网联盟</a>（W3C）完成标准制定。目标是替换1999年所制定的HTML
-                            4.01和XHTML
-                            1.0标准，以期能在互联网应用迅速发展的时候，使网络标准达到匹配当代的网络需求。广义论及HTML5时，实际指的是包括HTML、CSS和JavaScript在内的一套技术组合。它希望能够减少网页浏览器对于需要插件的丰富性网络应用服务（Plug-in-Based
-                            Rich Internet Application，RIA），例如：AdobeFlash、Microsoft Silverlight与Oracle
-                            JavaFX的需求，并且提供更多能有效加强网络应用的标准集。 </p>
+                        <p style="font-weight: bold">
+                        1.课程标题怎么取？
+                        </p>
+                        <p>
+                            一个好的标题包括主题，簇群和目标
+                        </p>
 
                     </article>
                 </div>

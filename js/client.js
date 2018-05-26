@@ -5,9 +5,15 @@
 
 var client = {};
 
+var debug = false;
 //默认
 client.devHost = "localhost/";
-client.defaultHost = "http://221.122.119.68:15031/";
+client.defaultHost = "https://dushu.zaodaoxia.com";
+
+if(debug)
+{
+  client.host = client.devHost;
+}
 
 client.host = client.defaultHost;
 
