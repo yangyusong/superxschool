@@ -106,3 +106,125 @@ xmp, pre, plaintext {
 /*杞挱*/
 .doc-carousel{height:300px;background:#f5f5f5 url(/demo/128.png) center center no-repeat;padding-top:100px;font-size:18px;text-align:center;color:#aaa;border:solid 1px #fff;}
 .float-right{float:right !important;}
+
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.block{
+    display: block;
+}
+
+.white_bg{
+    background-color: #fff;
+}
+
+.bottom_fixed{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    background-color: white;
+}
+
+.margin_b20{
+    margin-bottom: 20px;
+}
+
+.margin_b40{
+    margin-bottom: 40px;
+}
+
+.margin_b10{
+    margin-bottom: 10px;
+}
+
+.border_style{
+    border: 1px solid #aaa;
+}
+
+.pt10{
+    padding-top: 10px;
+}
+
+.ml{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.mt3{
+    margin-top: 3px;
+}
+
+.x_large{
+    font-size: x-large
+}
+
+.mt10{
+    margin-top: 10px !important;
+}
+
+.mt15{
+    margin-top: 15px !important;
+}
+
+.mt30{
+    margin-top: 30px !important;
+}
+
+.mt_n15{
+    margin-top: -15px !important;
+}
+
+html , body{
+    background-color: #f1f1f1;
+}
+
+.index_hr_with_height{
+    margin-bottom: 0;
+    margin-top: 3px;
+    height: 8px;
+    border: none;
+    background-color: #fff;
+}
+
+.index_block{
+    background-color: #f1f1f1;
+}
+
+.index_big_yard{
+    margin-bottom: 15px;
+}
+
+.index_participate_text{
+    line-height: 30px;
+}
+
+.index_number_of{
+    font-size: x-large;
+    line-height: 10px;;
+}
+
+.index_small_yard{
+    margin: 3px 0px 3px 0px;
+    padding: 10px;
+}
+
+.fs24{
+    font-size: 24px;
+}
+
+.line-limit-length {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
+}
+

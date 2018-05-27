@@ -1,0 +1,20 @@
+<div class="remove_node ui_cell 865556825CFD">
+    <div class="container-fluid">
+        <div class="row"></div>
+    </div>
+</div>
+<div class="remove_node ui_cell D8A283E9F431">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="936DA7CBDE2F ui_grid_cell col-xs-3"> 个人中心</div>
+            <div class="371B56AABCBF ui_grid_cell col-xs-3"> 头像修改</div>
+            <div class="B35430124303 ui_grid_cell col-xs-3">
+                姓名<input class="course_title" type="text"/>
+                <textarea class="form-control course_intro" rows="3" placeholder="简短的课程描述"></textarea>
+            </div>
+            <div class="3414F6F6D393 ui_grid_cell col-xs-3">
+                <button type="submit" class="btn next_step">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
