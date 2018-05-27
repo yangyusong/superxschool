@@ -3,7 +3,7 @@
  */
 
 "use strict";
-var dappContactAddress = "n1qyruqxiNh41zFQLeSax7VWBAfTh3VLqGK";
+var dappContactAddress = "n1qg7KDp2UMG6McBiMRvWJbvKQXhji1pUK6";
 var nebulas = require("nebulas"), Account = Account, neb = new nebulas.Neb();
 neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"))
 
@@ -121,6 +121,7 @@ function getBaseData(){
                 console.log(resp);
                 if(result.length > 0)
                 {
+
                     $(".user_info").html('<span class="float-right">' + result.replace(/\"/g, "") + '</span>');
                 }
 

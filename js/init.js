@@ -9,7 +9,7 @@ EJS.config( {cache: true, type: '<', ext: '.template' } );
 init.courseObj = new EJS({url: "partials/course.template"});
 init.teacherObj = new EJS({url: "partials/teacher.template"});
 init.personObj = new EJS({url: "partials/person.template"});
-init.pageUploadObj = new EJS({url: "partials/pageUpload.template"});
+init.pageUploadObj = new EJS({url: "partials/pageUpload.template?v=1"});
 init.courseRealTimeObj = new EJS({url: "partials/course_real_time.template"});
 
 init.toPageUpload = function(){
