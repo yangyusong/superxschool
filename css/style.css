@@ -228,3 +228,9 @@ html , body{
     white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
 }
 
+.search_result{
+    position: fixed;
+    top: 80px;
+    left: 300px;
+    color: #b10e0e;
+}

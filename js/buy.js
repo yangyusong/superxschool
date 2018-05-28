@@ -1,61 +1,60 @@
 /**
  * Created by yys on 2018/5/26.
+ * b0a46e2933d086e67c5b459f9225ede2d86f0b5e49e8186df57775efbc54e347
  */
 
 "use strict";
-var dappContactAddress = "n1qg7KDp2UMG6McBiMRvWJbvKQXhji1pUK6";
-var nebulas = require("nebulas"), Account = Account, neb = new nebulas.Neb();
+var dappContactAddress = "n1mjzzrXQYM6tAWoRZ3gs73c5KnMi3kPDEE";
+var nebulas = require("nebulas"), neb = new nebulas.Neb();
 neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"))
 
-console.log("Account");
-console.log(Account);
 
 var NebPay = require("nebpay");     //https://github.com/nebulasio/nebPay
 var nebPay = new NebPay();
 var serialNumber;
 //
-//$("#search").click(function () {
-//    if (!$("#search_title").val()) {
-//        alter('搜索标题不能为空');
-//        return;
-//    }
-//
-//    $('#content').text("");
-//    var from = dappContactAddress
-//    var value = "0";
-//    var nonce = "0"
-//    var gas_price = "1000000"
-//    var gas_limit = "2000000"
-//    var callFunction = "get";
-//    var callArgs = "[\"" + $("#search_title").val() + "\"]";
-//    console.log(callArgs);
-//    var contract = {
-//        "function": callFunction,
-//        "args": callArgs
-//    }
-//
-//
-//    neb.api.call(from, dappContactAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
-//        var result = resp.result;
-//
-//        if (result === 'null') {
-//            $('#content').text("没有发现该标题公开信，你可以立即写一篇！");
-//            $('#title').text("");
-//            $('#author').text("");
-//            return;
-//        }
-//        console.log(result);
-//        result = JSON.parse(result);
-//        $("#title").text(result.title);
-//        $('#content').text("正文:  " + result.content);
-//        $('#author').text("作者：" + result.author);
-//
-//    }).catch(function (err) {
-//        console.log("error :" + err.message);
-//
-//    })
-//
-//})
+$("#search").click(function () {
+    if (!$("#search_title").val()) {
+        alert('搜索标题不能为空');
+        return;
+    }
+
+    $('#content').text("");
+    var from = dappContactAddress
+    var value = "0";
+    var nonce = "0"
+    var gas_price = "1000000"
+    var gas_limit = "2000000"
+    var callFunction = "get";
+    var callArgs = "[\"" + $("#search_title").val() + "\"]";
+    console.log(callArgs);
+    var contract = {
+        "function": callFunction,
+        "args": callArgs
+    }
+
+
+    neb.api.call(from, dappContactAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+        var result = resp.result;
+
+        if (result === 'null') {
+            $('#content').text("该课程未购买");
+            return;
+        }
+        console.log("search");
+        console.log(result);
+        result = JSON.parse(result);
+        $('#content').text("你已完成课程《" + result.course + "》的购买");//Nebulas Nebula Chain Project Training System
+        setTimeout(function(){
+            $('#content').text("");
+        }, 6000);
+
+    }).catch(function (err) {
+        console.log("error :" + err.message);
+
+    })
+
+})
 
 
 $('#list').on("click", ".order_course", function (e) {
@@ -69,8 +68,8 @@ $('#list').on("click", ".order_course", function (e) {
     var to = dappContactAddress;
     var value = "0";
     var callFunction = "save";
-    var callArgs = "[\"" + price + "\",\"xx"  + "\"]";
-    //var callArgs = "[\"" + price + "\",\"" + course  + "\"]";
+    //var callArgs = "[\"" + price + "\",\"xx"  + "\"]";
+    var callArgs = "[\"" + price + "\",\"" + course  + "\"]";
     console.log(callArgs);
 
     serialNumber = nebPay.call(to, value, callFunction, callArgs, {    //使用nebpay的call接口去调用合约,

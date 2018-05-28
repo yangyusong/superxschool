@@ -47,18 +47,18 @@ TheSchool.prototype ={
         schoolItem.price = price;
         schoolItem.course = course;
 
-        this.data.put(price,schoolItem);
+        this.data.put(course,schoolItem);
     },
 
     getMe: function(){
         return Blockchain.transaction.from;
     },
 
-    get:function(schoolItem){
-        if(!schoolItem){
-            throw new Error("empty title")
+    get:function(course){
+        if(!course){
+            throw new Error("empty course")
         }
-        return this.data.get(schoolItem);
+        return this.data.get(course);
     }
 }
 

@@ -28,7 +28,7 @@ $(".next_step").click(function(){
      */
 
     "use strict";
-    var dappContactAddress = "n1rrE3wRVNFeeBRurzwwZRoZBpS5mXMQ2QZ";
+    var dappContactAddress = "n1nMULCW5DVa7Uk9nGW6kwatHjJ866u3M9M";
     var nebulas = require("nebulas");
     var Account = nebulas.Account;
     var neb = new nebulas.Neb();
