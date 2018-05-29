@@ -66,7 +66,7 @@ $('#list').on("click", ".order_course", function (e) {
     var price = $($(this)[0]).attr("data-price");
     var course = $($(this)[0]).attr("data-course");
     var to = dappContactAddress;
-    var value = "0";
+    var value = "0.001";
     var callFunction = "save";
     //var callArgs = "[\"" + price + "\",\"xx"  + "\"]";
     var callArgs = "[\"" + price + "\",\"" + course  + "\"]";

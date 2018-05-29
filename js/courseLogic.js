@@ -11,7 +11,8 @@ client.getList({}, function(json){
     $(".courseLists").html(html);
 
     //todo
-    var html = init.teacherObj.render({course:[{name: "abc", summary: "dfkdjf"},{name: "abc", summary: "dfkdjf"}]});
+    var html = init.teacherObj.render({course:[{name: "xiaowei", summary: "区块链学院董事长", pic_url: "img/tearch.jpg"},
+        {name: "zhangge", summary: "区块链学院cto", pic_url: "img/tearch.jpg"}]});
     $(".teacherLists").html(html);
 });
 
